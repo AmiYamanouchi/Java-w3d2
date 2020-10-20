@@ -1,0 +1,54 @@
+
+public class book {
+
+	public String bookTitle;
+	public String firstName;
+	public String lastName;
+	public int year;
+	
+	public book(String bName, String aFName, String aLName, int pYear) {
+		
+		if(bName == "") {
+			System.out.println("unknown");
+		} else {
+			bookTitle = bName;
+		}
+		
+		if(aFName == "") {
+			firstName = "John";
+		} else {
+			firstName = aFName;
+		}
+		
+		if(aLName == "") {
+			lastName = "Doe";
+		} else {
+			lastName = aLName;
+		}
+		
+		if(pYear < 1900) {
+			year = 1900;
+		} else {
+			year = pYear;
+		}
+		
+		
+	}
+	
+	public String getBooktName() {
+		return bookTitle;
+	}
+	
+	public String getAuthertName() {
+		return firstName + " " + lastName;
+	}
+	
+	public int getPublishedYear() {
+		return year;
+	}
+	
+	
+
+}
+
+//title: " " Auther : firstname lastname published in year

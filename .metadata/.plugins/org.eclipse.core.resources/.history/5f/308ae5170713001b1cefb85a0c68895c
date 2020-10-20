@@ -1,0 +1,14 @@
+
+public class student {
+
+	//Instance variable
+	public String firstName;
+	public String lastName;
+	
+	//Default Constructor
+	public student(String fName, String lName) {
+		firstName = fName;
+		lastName = lName;
+	}
+
+}

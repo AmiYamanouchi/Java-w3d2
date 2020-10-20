@@ -1,0 +1,24 @@
+
+public class Driver {
+	
+	public static void main(String[] args) {
+//		student student1 = new student("John", "Doe");
+//		student student2 = new student("Jane", "Dew");
+//		student student3 = new student("Albert", "Dao");
+//
+//		System.out.println(student1.firstName + " " + student1.lastName);
+//		System.out.println(student2.firstName + " " + student2.lastName);
+//		System.out.println(student3.firstName + " " + student3.lastName);
+		
+		book book1 = new book("Naruto", "ami", "smith", 1993);
+		book book2 = new book("Yamato", "sasa", "mumu", 1989);
+		book book3 = new book("One Piece", "John", "Jump", 2000);
+		
+		System.out.println("title: " + book1.bookTitle + " Auther: " + book1.firstName + book1.lastName + "published in " + book1.year);
+		System.out.println("title: " + book2.bookTitle + " Auther: " + book2.firstName + book2.lastName + "published in " + book2.year);
+		System.out.println("title: " + book3.bookTitle + " Auther: " + book3.firstName + book3.lastName + "published in " + book3.year);
+
+	}
+
+
+}

@@ -1,0 +1,18 @@
+
+public class book {
+
+	public String bookTitle;
+	public String firstName;
+	public String lastName;
+	public int year;
+	
+	public book(String bName, String aFName, String aLName, int pYear) {
+		bookTitle = bName;
+		firstName = aFName;
+		lastName = aLName;
+		year = pYear;
+	}
+
+}
+
+//title: " " Auther : firstname lastname published in year
