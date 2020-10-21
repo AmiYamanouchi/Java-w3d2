@@ -1,16 +1,12 @@
-//basic requirments for the class 
-//Instance variable
-//constluctor
 
-
-public class Student {
+public class student {
 
 	//Instance variable
 	private String firstName;
 	private String lastName;
 	
 	//Default Constructor
-	public Student(String fName, String lName) {
+	public student(String fName, String lName) {
 		
 		if(fName == "") {
 			System.out.println("unknown");
@@ -34,22 +30,4 @@ public class Student {
 	public String getLastName() {
 		return lastName;
 	}
-	
-	public void setFirstName(String fName) {
-		if(fName == "" || fName == null) {
-			firstName = "Unknown";
-		} else {
-			firstName = fName;
-		}
-	}
-	
-	public void setLastName(String lName) {
-		if(lName == "" || lName == null) {
-			lastName = "Unknown";
-		} else {
-			lastName = lName;
-		}
-	}
-	
-	
 }

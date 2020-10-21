@@ -17,6 +17,7 @@ public class Driver {
 //		int[] intArray = new int[3];
 //		Student[] studentArray = new Student[3];
 		
+		int[] intArray = new int[3];
 		Book[] BookArray = new Book[3];
 //		
 //		

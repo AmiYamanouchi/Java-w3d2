@@ -1,12 +1,12 @@
 
-public class Book {
+public class book {
 
 	public String bookTitle;
 	public String firstName;
 	public String lastName;
 	public int year;
 	
-	public Book(String bName, String aFName, String aLName, int pYear) {
+	public book(String bName, String aFName, String aLName, int pYear) {
 		
 		if(bName == "") {
 			System.out.println("unknown");
@@ -35,8 +35,6 @@ public class Book {
 		
 	}
 	
-	//get
-	
 	public String getBooktName() {
 		return bookTitle;
 	}
@@ -47,40 +45,6 @@ public class Book {
 	
 	public int getPublishedYear() {
 		return year;
-	}
-	
-	
-	//set 
-	
-	public void setBookName(String bName) {
-		if(bName == "" || bName == null) {
-			bookTitle = "Unknown";
-		} else {
-			bookTitle = bName;
-		}
-	}
-	
-	public void setAutherName(String aFName, String aLName) {
-		if(aFName == "") {
-			firstName = "John";
-		} else {
-			firstName = aFName;
-		}
-		
-		if(aLName == "") {
-			lastName = "Doe";
-		} else {
-			lastName = aLName;
-		}
-		
-	}
-	
-	public void setPublishedYear(int pYear) {
-		if(pYear < 1900) {
-			year = 1900;
-		} else {
-			year = pYear;
-		}
 	}
 	
 	

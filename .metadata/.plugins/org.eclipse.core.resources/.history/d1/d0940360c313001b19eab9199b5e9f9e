@@ -17,6 +17,7 @@ public class Driver {
 //		int[] intArray = new int[3];
 //		Student[] studentArray = new Student[3];
 		
+		int[] intArray = new int[3];
 		Book[] BookArray = new Book[3];
 //		
 //		
@@ -55,7 +56,6 @@ public class Driver {
 		printBooks(BookArray);
 		
 		BookArray[0].setBookName("Harrypotter");
-		BookArray[0].setPublishedYear(1500);
 		
 		printBooks(BookArray);
 		
