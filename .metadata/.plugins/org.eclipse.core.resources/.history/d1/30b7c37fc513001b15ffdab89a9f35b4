@@ -8,8 +8,8 @@ public class Book {
 	
 	public Book(String bName, String aFName, String aLName, int pYear) {
 		
-		if(bName == "" || bName == null) {
-			bookTitle = "Unknown";
+		if(bName == "") {
+			System.out.println("unknown");
 		} else {
 			bookTitle = bName;
 		}
