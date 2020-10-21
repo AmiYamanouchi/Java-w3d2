@@ -1,11 +1,11 @@
 
 public class Book {
 
-	private String bookTitle;
-	private String firstName;
-	private String lastName;
-	private int year;
-	private double price;
+	public String bookTitle;
+	public String firstName;
+	public String lastName;
+	public int year;
+	public double price;
 	
 	public Book(String bName, String aFName, String aLName, int pYear, double price) {
 		
@@ -91,9 +91,9 @@ public class Book {
 	
 	public void setPrice(double bPrice, double tax) {
 		if(bPrice < 0) {
-			this.price = 0;
+			price = 0;
 		} else {
-			this.price = bPrice + ((bPrice * tax)/100);
+			price = bPrice + ((bPrice * tax)/100);
 		}
 	}
 	

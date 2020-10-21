@@ -1,13 +1,12 @@
 
 public class Book {
 
-	private String bookTitle;
-	private String firstName;
-	private String lastName;
-	private int year;
-	private double price;
+	public String bookTitle;
+	public String firstName;
+	public String lastName;
+	public int year;
 	
-	public Book(String bName, String aFName, String aLName, int pYear, double price) {
+	public Book(String bName, String aFName, String aLName, int pYear) {
 		
 		if(bName == "" || bName == null) {
 			bookTitle = "Unknown";
@@ -33,7 +32,6 @@ public class Book {
 			year = pYear;
 		}
 		
-		this.price= price;
 		
 	}
 	
@@ -49,10 +47,6 @@ public class Book {
 	
 	public int getPublishedYear() {
 		return year;
-	}
-	
-	public double getPrice() {
-		return price;
 	}
 	
 	
@@ -86,14 +80,6 @@ public class Book {
 			year = 1900;
 		} else {
 			year = pYear;
-		}
-	}
-	
-	public void setPrice(double bPrice, double tax) {
-		if(bPrice < 0) {
-			this.price = 0;
-		} else {
-			this.price = bPrice + ((bPrice * tax)/100);
 		}
 	}
 	

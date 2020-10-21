@@ -9,7 +9,7 @@ public class Driver {
 	
 	public static void printBooks(Book[] bookArray) {
 		for(int i = 0; i < bookArray.length; i++) {
-			System.out.println(bookArray[i].getBooktName() + " Auther: " + bookArray[i].getAuthertName() + "published in " + bookArray[i].getPublishedYear() + "total payment:  " + bookArray[i].getPrice());
+			System.out.println(bookArray[i].getBooktName() + " Auther: " + bookArray[i].getAuthertName() + "published in " + bookArray[i].getPublishedYear());
 		}
 	}
 	
@@ -48,15 +48,14 @@ public class Driver {
 //		
 //		
 //		
-		BookArray[0] = new Book("Naruto", "ami", "smith", 1993, 20.5);
-		BookArray[1] = new Book("Yamato", "sasa", "mumu", 1789, 12.3);
-		BookArray[2] = new Book("One Piece", "John", "Jump", 2000, 10.5);
+		BookArray[0] = new Book("Naruto", "ami", "smith", 1993);
+		BookArray[1] = new Book("Yamato", "sasa", "mumu", 1789);
+		BookArray[2] = new Book("One Piece", "John", "Jump", 2000);
 		
 		printBooks(BookArray);
 		
 		BookArray[0].setBookName("Harrypotter");
 		BookArray[0].setPublishedYear(1500);
-		BookArray[0].setPrice(12.0, 12);
 		
 		printBooks(BookArray);
 		

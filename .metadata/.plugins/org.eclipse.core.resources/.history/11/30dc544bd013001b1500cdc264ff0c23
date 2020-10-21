@@ -56,7 +56,6 @@ public class Driver {
 		
 		BookArray[0].setBookName("Harrypotter");
 		BookArray[0].setPublishedYear(1500);
-		BookArray[0].setPrice(12.0, 12);
 		
 		printBooks(BookArray);
 		
